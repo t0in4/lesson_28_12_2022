@@ -7,18 +7,27 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
+        // первый случай использования тернарного оператор - start
         int max = a > b ? a : b; // тернарный оператор
-
-
         // комментировать Ctrl + Shift + /
-
-       /* if (a > b) {
+        if (a > b) {
             max = a;
         } else {
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
             max = b;
-        }*/
+        }
+        // первый случай использования тернарного оператор - end
+
+        // второй случай использования тернарного оператора - start
+        String result = a == b ? "equal" :
+                a > b ? "more" : "less";
+        if (a == b) {
+            result = "равно";
+        } else if (a > b) {
+            result = "больше";
+        } else {
+            result = "меньше";
+        }
+        // второй случай использования тернарного оператора - end
 
         // тернарный оператор - start
         // result = condition ? trueCase : elseCase;
